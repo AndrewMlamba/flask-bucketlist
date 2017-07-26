@@ -9,6 +9,4 @@ install:
 script:
   - coverage run --source=tests -m py.test && coverage report
 after_success:
-  - coveralls
-dist:
-  - precise
+  - coverallsS
