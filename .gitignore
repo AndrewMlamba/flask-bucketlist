@@ -1,0 +1,9 @@
+### Python ###
+__pycache__/
+
+# User-specific stuff:
+.idea/
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
