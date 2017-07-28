@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}Page not found{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block main %}
+<div class="clearfix" style="text-align: center">
+    <h1> 404 Error </h1>
+    <h3> The page you're looking for doesn't exist.</h3>
+    <a href="{{ url_for('index_view') }}">Home</a>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

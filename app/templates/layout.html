@@ -13,9 +13,10 @@
 
 <body>
 <div class="container">
-
+    {% block header %}
     <header>
         <div class="header clearfix">
+
             <nav>
                 <ul class="nav nav-pills pull-right">
                     <li><a href="{{url_for('index_view')}}">Home</a></li>
@@ -23,25 +24,26 @@
                     <li><a href="{{url_for('about_view')}}">About</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
-
+    {% endblock %}
 
     <main>
         <section>
-
             {% block main %}
 
             {% endblock %}
-
         </section>
     </main>
 
+    {% block footer %}
     <footer class="footer">
         <div>
             &copy; 2017.All Rights Reserved.
         </div>
     </footer>
+    {% endblock %}
 
 </div>
 </body>
